@@ -8,21 +8,34 @@ null==d?void 0:d))},attrHooks:{type:{set:function(a,b){if(!o.radioValue&&"radio"
     <body>
     <h1> Which Dragon Ball Z character will you fight?</h1>
     <h3> 1. What's your power level? </h3>
-    <input id="age">
+    <input id="powerLvl">
     <h3> 2. Rasengan or Spirit Bomb?</h3>
-    <input id="patronus">
+    <input id="attack">
     <button> Submit All </button>
     <h1 id="title"> </h1>
     <p id="answer"> </p>
     
     
-    <img hidden="" id="picAnswer" src="https://external-preview.redd.it/Vt7t6TPSQ98h50CyffVKco4fzmehaoju9mePGuiH2Bg.png?width=851&amp;auto=webp&amp;s=37b0c1901f72f3c569385b6d7e6be0aabdd81d57">
+    <img hidden="" id="picGum" src="https://external-preview.redd.it/Vt7t6TPSQ98h50CyffVKco4fzmehaoju9mePGuiH2Bg.png?width=851&amp;auto=webp&amp;s=37b0c1901f72f3c569385b6d7e6be0aabdd81d57">
     
-    <img hidden="" id="picAnswer2" src="https://i.kym-cdn.com/entries/icons/original/000/027/475/Screen_Shot_2018-10-25_at_11.02.15_AM.png">
+    <img hidden="" id="picPika" src="https://i.kym-cdn.com/entries/icons/original/000/027/475/Screen_Shot_2018-10-25_at_11.02.15_AM.png">
     
-    <img hidden="" id="picAnswer3" src="https://i.ytimg.com/vi/i_FbQzQQQLI/maxresdefault.jpg">
+    <img hidden="" id="picNaruto" src="https://i.ytimg.com/vi/i_FbQzQQQLI/maxresdefault.jpg">
     
-    <img hidden="" id="picAnswer4" src="https://cdna.artstation.com/p/assets/images/images/012/881/420/large/mcashe-mcashe-aang-avatar-state-artwork-by-mcashe-dbgkkjg.jpg?1536979542">
+    <img hidden="" id="picAang" src="https://cdna.artstation.com/p/assets/images/images/012/881/420/large/mcashe-mcashe-aang-avatar-state-artwork-by-mcashe-dbgkkjg.jpg?1536979542">
     
 
-</body></html>
+<script>
+/*__POPCODESTART__*/
+$("button").click(function(){
+    var gumball = $("#powerLvl").val() && $("#attack").val();
+    if("#powerLvl" <= 9000 && "#attack" === "Spirit Bomb") {
+        $("#picGum").show();
+        $("#picPika").hide();
+        $("#picNaruto").hide();
+        $("#picAang").hide();
+        }  else{
+        $("#picPika").show();
+        }
+        
+});</script></body></html>
